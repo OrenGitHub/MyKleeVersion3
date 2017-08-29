@@ -5,13 +5,13 @@ cd klee
 ./configure \
 CFLAGS="-ggdb -O0"                                            \
 CXXLAGS="-ggdb -O0"                                           \
-LDFLAGS="-L/home/oren/GIT/MyKlee/minisat/build/release/lib/"  \
---with-llvm=/home/oren/GIT/MyKlee/llvm/                       \
---with-llvmcc=/home/oren/GIT/MyKlee/llvm/Release/bin/clang    \
---with-llvmcxx=/home/oren/GIT/MyKlee/llvm/Release/bin/clang++ \
---with-stp=/home/oren/GIT/MyKlee/stp/build/                   \
---with-uclibc=/home/oren/GIT/MyKlee/klee-uclibc               \
---with-z3=/home/oren/GIT/MyKlee/z3/build/                     \
+LDFLAGS="-L/home/oren/GIT/MyKleeVersion3/minisat/build/release/lib/"  \
+--with-llvm=/home/oren/GIT/MyKleeVersion3/llvm/                       \
+--with-llvmcc=/home/oren/GIT/MyKleeVersion3/llvm/Release/bin/clang    \
+--with-llvmcxx=/home/oren/GIT/MyKleeVersion3/llvm/Release/bin/clang++ \
+--with-stp=/home/oren/GIT/MyKleeVersion3/stp/build/                   \
+--with-uclibc=/home/oren/GIT/MyKleeVersion3/klee-uclibc               \
+--with-z3=/home/oren/GIT/MyKleeVersion3/z3/build/                     \
 --enable-posix-runtime
 
 make -j `nproc` ENABLE_OPTIMIZED=0
