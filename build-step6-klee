@@ -3,8 +3,8 @@ rm -rf klee/.git
 
 cd klee
 ./configure \
-CFLAGS="-ggdb -O0"                                            \
-CXXLAGS="-ggdb -O0"                                           \
+CFLAGS="-ggdb -O0"                                                    \
+CXXLAGS="-ggdb -O0"                                                   \
 LDFLAGS="-L/home/oren/GIT/MyKleeVersion3/minisat/build/release/lib/"  \
 --with-llvm=/home/oren/GIT/MyKleeVersion3/llvm/                       \
 --with-llvmcc=/home/oren/GIT/MyKleeVersion3/llvm/Release/bin/clang    \
